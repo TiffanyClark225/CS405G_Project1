@@ -9,18 +9,6 @@ CREATE TABLE addresses (
     zipcode int(5),
 );
 
-CREATE TABLE receipts (
-    formalName char(40),
-    address1 char(40),
-    address2 char(40),
-    city char(40),
-    state_ABB char(2),
-    zipcode int(5),
-    date_of_purchase date,
-    totalSales DOUBLE(5,2),
-    picture blob(50),
-);
-
 INSERT INTO addresses
 VALUES
 ('Costco', '1500 Fitzgerald Ct', NULL, 'Lexington', 'KY', '40509'),
