@@ -1,0 +1,118 @@
+CREATE DATABASE DB1;
+
+CREATE TABLE addresses (
+    formalName char(40),
+    address1 char(40),
+    address2 char(40),
+    city char(40),
+    state_ABB char(2),
+    zipcode int(5),
+);
+
+CREATE TABLE receipts (
+    formalName char(40),
+    address1 char(40),
+    address2 char(40),
+    city char(40),
+    state_ABB char(2),
+    zipcode int(5),
+    date_of_purchase date,
+    totalSales DOUBLE(5,2),
+    picture blob(50),
+);
+
+INSERT INTO addresses
+VALUES
+('Costco', '1500 Fitzgerald Ct', NULL, 'Lexington', 'KY', '40509'),
+('Pizza Hut', '4240 Saron Dr', 'STE 7B', 'Lexington', 'KY', '40517'),
+('Jimmy Johns', '427 Redding Rd', NULL, 'Lexington', 'KY', '40517'),
+('Insomnia Cookies', '433 Jersey St', NULL, 'Lexington', 'KY', '40508'),
+('European Delights Bakery', '221 E Brannon Rd', NULL, 'Nicholasville', 'KY', '40356'),
+('DY Market', '3101 Clays Mill Rd', 'STE 102', 'Lexington', 'KY', '40503'),
+('Raising Canes', '544 S Upper St', NULL, 'Lexington', 'KY', '40508'),
+('Phillip Dennison', '6067 Falls of Rough Rd', NULL, 'Caneyville', 'KY', '42721'),
+('Carolyn Polston', '8074 Owensboro Rd', NULL, 'Leitchfield', 'KY', '42754'),
+('Burger King', '1859 Cumberland Falls Highway', NULL, 'Corbin', 'KY', '40701'),
+('Robert Clark', '319 W Market St', NULL, 'Leitchfield', 'KY', '42754'),
+('Stanley Pigman', 'PO Box 10609', NULL, 'Wilmington', 'NC', '27262'),
+('Earl Congdon', 'PO Box 6635', NULL, 'High Point', 'NC', '27262'),
+('April Newton', '542 Ballard St', NULL, 'Lexington', 'KY', '40508'),
+('Sai Super Bazar Farmers Market', '3146 Mapleleaf Dr', NULL, 'Lexington', 'KY', '40509');
+
+
+
+insert into addresses (formalName, addresses1, addresses2, city, state_ABB, zipcode)
+values ("Mr. Ray L. Hyatt Jr.", "300 Rose Street", "Room 102 Hardymon Building", "Lexington", "KY", 40506);
+
+insert into addresses (formalName, addresses1, addresses2, city, state_ABB, zipcode)
+values ("Mr. Ray L. Hyatt Jr.", "301 Hilltop Avenue", "Room 102", "Lexington", "KY", 40506);
+
+insert into addresses (formalName, addresses1, addresses2, city, state_ABB, zipcode)
+values ("John Wick", "82 Beaver St", "Room 1301", "New York", "NY", 10005);
+
+insert into addresses (formalName, addresses1, addresses2, city, state_ABB, zipcode)
+values ("Tony Stark", "200 Park Avenue", "Penthouse", "New York", "NY", 10001);
+
+insert into addresses (formalName, addresses1, addresses2, city, state_ABB, zipcode)
+values ("Dr. Stephen Strange", "117A Bleecker Street", null, "New York", "NY", 10001);
+
+insert into addresses (formalName, addresses1, addresses2, city, state_ABB, zipcode)
+values ("Bob C. Smith", "300 Rose Street", "Apartment 221", "New York", "NY", 10001);
+
+insert into addresses (formalName, addresses1, addresses2, city, state_ABB, zipcode)
+values ("Bowman F. Wildcat", "#1 Avenue of Champions", null, "Lexington", "KY", 40506);
+
+insert into addresses (formalName, addresses1, addresses2, city, state_ABB, zipcode)
+values ("Bob C. Smith", "200 Park Avenue ", "NULL", "Lexington", "KY", 40507);
+
+insert into addresses (formalName, addresses1, addresses2, city, state_ABB, zipcode)
+values ("Bob Porter c/o Intech", "1 Dead End Row", "Room 200", "Dallas", "TX", 12347);
+
+insert into addresses (formalName, addresses1, addresses2, city, state_ABB, zipcode)
+values ("Mr. Bob Sydell c/o Intech", "1 Dead End Row", "Room 200", "Dallas", "TX", 12347);
+
+
+insert into addresses (formalName, address1, address2, city, state_ABB, zipcode)
+values ("Southland Lanes", "205 Southland Dr", null,"Lexington", "KY", 40503);
+
+insert into addresses (formalName, address1, address2, city, state_ABB, zipcode)
+values ("Starbucks", "404 S Limestone", null, "Lexington", "KY", 40508);
+
+insert into addresses (formalName, address1, address2, city, state_ABB, zipcode)
+values ("Planet Thai", "2417 Nicholasville Rd", null, "Lexington", "KY", 40503);
+
+insert into addresses (formalName, address1, address2, city, state_ABB, zipcode)
+values ("O'Reilly Auto Parts", "125 W Hightway 92", null, "Williamsburg", "KY", 40769);
+
+insert into addresses (formalName, address1, address2, city, state_ABB, zipcode)
+values ("Goodwill", "729 W Hightway 92", null, "Williamsburg", "KY", 40769);
+
+insert into addresses (formalName, address1, address2, city, state_ABB, zipcode)
+values ("Kroger", "704 Euclid Ave", null, "Lexington", "KY", 40508);
+
+insert into addresses (formalName, address1, address2, city, state_ABB, zipcode)
+values ("Trader Joe's", "2326 Nicholasville Rd", null, "Lexington", "KY", 40503);
+
+insert into addresses (formalName, address1, address2, city, state_ABB, zipcode)
+values ("Sam's Club", "1063 E New Circle Rd", null, "Lexington", "KY", 40505);
+
+insert into addresses (formalName, address1, address2, city, state_ABB, zipcode)
+values ("Walmart", "500 W New Circle Rd", null, "Lexington", "KY", 40511);
+
+insert into addresses (formalName, address1, address2, city, state_ABB, zipcode)
+values ("Target", "500 S Upper", "STE 110", "Lexington", "KY", 40508);
+
+insert into addresses (formalName, address1, address2, city, state_ABB, zipcode)
+values ("Meijer", "351 Meijer Way", "STE 100", "Lexington", "KY", 40503);
+
+insert into addresses (formalName, address1, address2, city, state_ABB, zipcode)
+values ("Good Foods Market & Cafe", "445 Southload Dr", null, "Lexington", "KY", 40503);
+
+insert into addresses (formalName, address1, address2, city, state_ABB, zipcode)
+values ("Whole Foods Market", "4059 Finn Way", null, "Lexington", "KY", 40517);
+
+insert into addresses (formalName, address1, address2, city, state_ABB, zipcode)
+values ("Han Woo Ri", "371 S Limestone", "FLOOR 1", "Lexington", "KY", 40508);
+
+insert into addresses (formalName, address1, address2, city, state_ABB, zipcode)
+values ("Kung Fu Tea x TKK Fried Chicken", "685 S Limestone", "STE 150", "Lexington", "KY", 40508);
