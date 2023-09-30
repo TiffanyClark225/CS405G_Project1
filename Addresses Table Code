@@ -1,12 +1,24 @@
-CREATE DATABASE DB1;
+
 
 CREATE TABLE addresses (
     formalName char(40),
     address1 char(40),
     address2 char(40),
     city char(40),
-    state_ABB char(2),
+    stateABB char(2),
+    zipcode int(5)
+);
+
+CREATE TABLE receipts (
+    formalName char(40),
+    address1 char(40),
+    address2 char(40),
+    city char(40),
+    stateABB char(2),
     zipcode int(5),
+    date_of_purchase date,
+    totalSales DOUBLE(5,2),
+    picture blob(50)
 );
 
 INSERT INTO addresses
@@ -29,78 +41,90 @@ VALUES
 
 
 
-insert into addresses (formalName, addresses1, addresses2, city, state_ABB, zipcode)
-values ("Mr. Ray L. Hyatt Jr.", "300 Rose Street", "Room 102 Hardymon Building", "Lexington", "KY", 40506);
+insert into addresses (formalName, address1, address2, city, stateABB, zipcode)
+values ("Mr. Ray L. Hyatt Jr.", "300 Rose St", "Room 102 Hardymon Building ", "Lexington", "KY", 40506);
 
-insert into addresses (formalName, addresses1, addresses2, city, state_ABB, zipcode)
-values ("Mr. Ray L. Hyatt Jr.", "301 Hilltop Avenue", "Room 102", "Lexington", "KY", 40506);
+insert into addresses (formalName, address1, address2, city, stateABB, zipcode)
+values ("Mr. Ray L. Hyatt Jr.", "301 Hilltop Avenue", "Room 102 ", "Lexington", "KY", 40506);
 
-insert into addresses (formalName, addresses1, addresses2, city, state_ABB, zipcode)
-values ("John Wick", "82 Beaver St", "Room 1301", "New York", "NY", 10005);
+insert into addresses (formalName, address1, address2, city,    stateABB, zipcode)
+values ("John Wick", "82 Beaver St", "Room 1301 ", "New York", "NY", 10005);
 
-insert into addresses (formalName, addresses1, addresses2, city, state_ABB, zipcode)
-values ("Tony Stark", "200 Park Avenue", "Penthouse", "New York", "NY", 10001);
+insert into addresses (formalName, address1, address2, city,    stateABB, zipcode)
+values ("Tony Stark", "200 Park Avenue", "Penthouse ", "New York", "NY", 10001);
 
-insert into addresses (formalName, addresses1, addresses2, city, state_ABB, zipcode)
+insert into addresses (formalName, address1, address2, city,    stateABB, zipcode)
 values ("Dr. Stephen Strange", "117A Bleecker Street", null, "New York", "NY", 10001);
 
-insert into addresses (formalName, addresses1, addresses2, city, state_ABB, zipcode)
-values ("Bob C. Smith", "300 Rose Street", "Apartment 221", "New York", "NY", 10001);
+insert into addresses (formalName, address1, address2, city,    stateABB, zipcode)
+values ("Bob C. Smith", "300 Rose Street", "Apartment 221 ", "New York", "NY", 10001);
 
-insert into addresses (formalName, addresses1, addresses2, city, state_ABB, zipcode)
+insert into addresses (formalName, address1, address2, city,    stateABB, zipcode)
 values ("Bowman F. Wildcat", "#1 Avenue of Champions", null, "Lexington", "KY", 40506);
 
-insert into addresses (formalName, addresses1, addresses2, city, state_ABB, zipcode)
-values ("Bob C. Smith", "200 Park Avenue ", "NULL", "Lexington", "KY", 40507);
+insert into addresses (formalName, address1, address2, city,    stateABB, zipcode)
+values ("Bob C. Smith", "200 Park Avenue ", NULL, "Lexington", "KY", 40507);
 
-insert into addresses (formalName, addresses1, addresses2, city, state_ABB, zipcode)
-values ("Bob Porter c/o Intech", "1 Dead End Row", "Room 200", "Dallas", "TX", 12347);
+insert into addresses (formalName, address1, address2, city,    stateABB, zipcode)
+values ("Bob Porter c/o Intech", "1 Dead End Row", "Room 200n ", "Dallas", "TX", 12347);
 
-insert into addresses (formalName, addresses1, addresses2, city, state_ABB, zipcode)
-values ("Mr. Bob Sydell c/o Intech", "1 Dead End Row", "Room 200", "Dallas", "TX", 12347);
+insert into addresses (formalName, address1, address2, city,    stateABB, zipcode)
+values ("Mr. Bob Sydell c/o Intech", "1 Dead End Row", "Room 200 ", "Dallas", "TX", 12347);
 
 
-insert into addresses (formalName, address1, address2, city, state_ABB, zipcode)
+insert into addresses (formalName, address1, address2, city,    stateABB, zipcode)
 values ("Southland Lanes", "205 Southland Dr", null,"Lexington", "KY", 40503);
 
-insert into addresses (formalName, address1, address2, city, state_ABB, zipcode)
+insert into addresses (formalName, address1, address2, city,    stateABB, zipcode)
 values ("Starbucks", "404 S Limestone", null, "Lexington", "KY", 40508);
 
-insert into addresses (formalName, address1, address2, city, state_ABB, zipcode)
+insert into addresses (formalName, address1, address2, city,    stateABB, zipcode)
 values ("Planet Thai", "2417 Nicholasville Rd", null, "Lexington", "KY", 40503);
 
-insert into addresses (formalName, address1, address2, city, state_ABB, zipcode)
+insert into addresses (formalName, address1, address2, city,    stateABB, zipcode)
 values ("O'Reilly Auto Parts", "125 W Hightway 92", null, "Williamsburg", "KY", 40769);
 
-insert into addresses (formalName, address1, address2, city, state_ABB, zipcode)
+insert into addresses (formalName, address1, address2, city,    stateABB, zipcode)
 values ("Goodwill", "729 W Hightway 92", null, "Williamsburg", "KY", 40769);
 
-insert into addresses (formalName, address1, address2, city, state_ABB, zipcode)
+insert into addresses (formalName, address1, address2, city,    stateABB, zipcode)
 values ("Kroger", "704 Euclid Ave", null, "Lexington", "KY", 40508);
 
-insert into addresses (formalName, address1, address2, city, state_ABB, zipcode)
+insert into addresses (formalName, address1, address2, city,    stateABB, zipcode)
 values ("Trader Joe's", "2326 Nicholasville Rd", null, "Lexington", "KY", 40503);
 
-insert into addresses (formalName, address1, address2, city, state_ABB, zipcode)
+insert into addresses (formalName, address1, address2, city,    stateABB, zipcode)
 values ("Sam's Club", "1063 E New Circle Rd", null, "Lexington", "KY", 40505);
 
-insert into addresses (formalName, address1, address2, city, state_ABB, zipcode)
+insert into addresses (formalName, address1, address2, city,    stateABB, zipcode)
 values ("Walmart", "500 W New Circle Rd", null, "Lexington", "KY", 40511);
 
-insert into addresses (formalName, address1, address2, city, state_ABB, zipcode)
-values ("Target", "500 S Upper", "STE 110", "Lexington", "KY", 40508);
+insert into addresses (formalName, address1, address2, city,    stateABB, zipcode)
+values ("Target", "500 S Upper", "STE 110 ", "Lexington", "KY", 40508);
 
-insert into addresses (formalName, address1, address2, city, state_ABB, zipcode)
-values ("Meijer", "351 Meijer Way", "STE 100", "Lexington", "KY", 40503);
+insert into addresses (formalName, address1, address2, city,    stateABB, zipcode)
+values ("Meijer", "351 Meijer Way", "STE 100 ", "Lexington", "KY", 40503);
 
-insert into addresses (formalName, address1, address2, city, state_ABB, zipcode)
+insert into addresses (formalName, address1, address2, city,    stateABB, zipcode)
 values ("Good Foods Market & Cafe", "445 Southload Dr", null, "Lexington", "KY", 40503);
 
-insert into addresses (formalName, address1, address2, city, state_ABB, zipcode)
+insert into addresses (formalName, address1, address2, city,    stateABB, zipcode)
 values ("Whole Foods Market", "4059 Finn Way", null, "Lexington", "KY", 40517);
 
-insert into addresses (formalName, address1, address2, city, state_ABB, zipcode)
-values ("Han Woo Ri", "371 S Limestone", "FLOOR 1", "Lexington", "KY", 40508);
+insert into addresses (formalName, address1, address2, city,    stateABB, zipcode)
+values ("Han Woo Ri", "371 S Limestone", "FLOOR 1 ", "Lexington", "KY", 40508);
 
-insert into addresses (formalName, address1, address2, city, state_ABB, zipcode)
-values ("Kung Fu Tea x TKK Fried Chicken", "685 S Limestone", "STE 150", "Lexington", "KY", 40508);
+insert into addresses (formalName, address1, address2, city,    stateABB, zipcode)
+values ("Kung Fu Tea x TKK Fried Chicken", "685 S Limestone", "STE 150 ", "Lexington", "KY", 40508);
+
+
+USE tncl225;
+create tables;
+SHOW TABLES;
+insert functions;
+USE tablename (addresses, receipts);
+SHOW COLUMNS * FROM tablename;
+SELECT * FROM tablename;
+
+
+SELECT formalName AS "Customer/Business Full Name", CONCAT(address1, IFNULL(CONCAT(' ', address2), ''), ' ', city, ', ', stateABB, ' ', zipcode) AS "Delivery address" FROM addresses;
