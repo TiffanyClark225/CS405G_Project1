@@ -18,6 +18,7 @@ CREATE TABLE receipts (
     zipcode int(5),
     date_of_purchase date,
     totalSales DOUBLE(5,2),
+    num_of_items int(3),
     picture blob(50)
 );
 
