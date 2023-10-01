@@ -17,7 +17,7 @@ CREATE TABLE receipts (
     stateABB char(2),
     zipcode int(5),
     date_of_purchase date,
-    totalSales DOUBLE(5,2),
+    totalSales DECIMAL(5,2),
     num_of_items int(3),
     picture blob(50)
 );
@@ -39,8 +39,6 @@ VALUES
 ('Earl Congdon', 'PO Box 6635', NULL, 'High Point', 'NC', 27262),
 ('April Newton', '542 Ballard St', NULL, 'Lexington', 'KY', 40508),
 ('Sai Super Bazar Farmers Market', '3146 Mapleleaf Dr', NULL, 'Lexington', 'KY', 40509);
-
-
 
 INSERT INTO addresses
 VALUES 
@@ -72,6 +70,27 @@ VALUES
 ("Whole Foods Market", "4059 Finn Way", null, "Lexington", "KY", 40517),
 ("Han Woo Ri", "371 S Limestone", "FLOOR 1 ", "Lexington", "KY", 40508),
 ("Kung Fu Tea x TKK Fried Chicken", "685 S Limestone", "STE 150 ", "Lexington", "KY", 40508);
+
+INSERT INTO receipts 
+VALUES 
+('Southland Lanes','205 Southland Dr', NULL, 'Lexington','KY',40503,'2023-09-24',37.6,3),
+('Buc-ee''s','1013 Buc-ee''s Blvd', NULL, 'Richmond','KY',40475,'2023-09-23',17.71,1),
+('Starbucks','404 S Limestone', NULL, 'Lexington','KY',40508,'2023-09-22',15.64,3),
+('Planet Thai','2417 Nicholasville Rd', NULL, 'Lexington','KY',40503,'2023-09-22',36.99,4),
+('O''Reilly Auto Parts','125 W. Highway 92', NULL, 'Williamsburg','KY',40769,'2023-09-16',26.7,1),
+('Goodwill','729 W. Highway 92', NULL, 'Williamsburg','KY',40769,'2023-09-16',17,3),
+('Kroger','704 Euclid Avenue', NULL, 'Lexington','KY',40508,'2023-09-12',72.4,18),
+('Trader Joe''s','2326 Nicholasville Rd', NULL, 'Lexington','KY',40503,'2023-09-12',14.01,3),
+('Sam''s Club','1063 E New Circle Rd', NULL, 'Lexington','KY',40505,'2023-09-02',118.86,14),
+('Walmart','500 W New Circle Rd', NULL, 'Lexington','KY',40511,'2023-08-12',74.21,14),
+('Target','500 S Upper St', 'STE 110','Lexington','KY',40508,'2023-08-12',21.18,2),
+('Burger King','1859 Cumberland Falls Highway', NULL, 'Corbin','KY',40701,'2023-08-04',29,5),
+('Meijer','351 Meijer Way', 'STE 100','Lexington','KY',40503,'2023-07-30',6.09,2),
+('Good Foods Market & Cafe','455 D Southland Drive', NULL, 'Lexington','KY',40503,'2023-04-01',4.44,1),
+('Whole Foods Market','4059 Finn Way', NULL, 'Lexington','KY',40517,'2022-12-27',5.29,1);
+
+
+
 
 
 USE tncl225;
