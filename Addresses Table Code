@@ -23,21 +23,21 @@ CREATE TABLE receipts (
 
 INSERT INTO addresses
 VALUES
-('Costco', '1500 Fitzgerald Ct', NULL, 'Lexington', 'KY', '40509'),
-('Pizza Hut', '4240 Saron Dr', 'STE 7B', 'Lexington', 'KY', '40517'),
-('Jimmy Johns', '427 Redding Rd', NULL, 'Lexington', 'KY', '40517'),
-('Insomnia Cookies', '433 Jersey St', NULL, 'Lexington', 'KY', '40508'),
-('European Delights Bakery', '221 E Brannon Rd', NULL, 'Nicholasville', 'KY', '40356'),
-('DY Market', '3101 Clays Mill Rd', 'STE 102', 'Lexington', 'KY', '40503'),
-('Raising Canes', '544 S Upper St', NULL, 'Lexington', 'KY', '40508'),
-('Phillip Dennison', '6067 Falls of Rough Rd', NULL, 'Caneyville', 'KY', '42721'),
-('Carolyn Polston', '8074 Owensboro Rd', NULL, 'Leitchfield', 'KY', '42754'),
-('Burger King', '1859 Cumberland Falls Highway', NULL, 'Corbin', 'KY', '40701'),
-('Robert Clark', '319 W Market St', NULL, 'Leitchfield', 'KY', '42754'),
-('Stanley Pigman', 'PO Box 10609', NULL, 'Wilmington', 'NC', '27262'),
-('Earl Congdon', 'PO Box 6635', NULL, 'High Point', 'NC', '27262'),
-('April Newton', '542 Ballard St', NULL, 'Lexington', 'KY', '40508'),
-('Sai Super Bazar Farmers Market', '3146 Mapleleaf Dr', NULL, 'Lexington', 'KY', '40509');
+('Costco', '1500 Fitzgerald Ct', NULL, 'Lexington', 'KY', 40509),
+('Pizza Hut', '4240 Saron Dr', 'STE 7B', 'Lexington', 'KY', 40517),
+('Jimmy Johns', '427 Redding Rd', NULL, 'Lexington', 'KY', 40517),
+('Insomnia Cookies', '433 Jersey St', NULL, 'Lexington', 'KY', 40508),
+('European Delights Bakery', '221 E Brannon Rd', NULL, 'Nicholasville', 'KY', 40356),
+('DY Market', '3101 Clays Mill Rd', 'STE 102', 'Lexington', 'KY', 40503),
+('Raising Canes', '544 S Upper St', NULL, 'Lexington', 'KY', 40508),
+('Phillip Dennison', '6067 Falls of Rough Rd', NULL, 'Caneyville', 'KY', 42721),
+('Carolyn Polston', '8074 Owensboro Rd', NULL, 'Leitchfield', 'KY', 42754),
+('Burger King', '1859 Cumberland Falls Highway', NULL, 'Corbin', 'KY', 40701),
+('Robert Clark', '319 W Market St', NULL, 'Leitchfield', 'KY', 42754),
+('Stanley Pigman', 'PO Box 10609', NULL, 'Wilmington', 'NC', 27262),
+('Earl Congdon', 'PO Box 6635', NULL, 'High Point', 'NC', 27262),
+('April Newton', '542 Ballard St', NULL, 'Lexington', 'KY', 40508),
+('Sai Super Bazar Farmers Market', '3146 Mapleleaf Dr', NULL, 'Lexington', 'KY', 40509);
 
 
 
