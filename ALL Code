@@ -103,3 +103,12 @@ SELECT * FROM tablename;
 
 
 SELECT formalName AS "Customer/Business Full Name", CONCAT(address1, IFNULL(CONCAT(' ', address2), ''), ' ', city, ', ', stateABB, ' ', zipcode) AS "Delivery address" FROM addresses;
+
+SELECT COUNT(*) AS "Total number" FROM addresses WHERE formalName LIKE '%Bo%';
+SELECT COUNT(*) AS "Total number" FROM receipts WHERE formalName LIKE '%Bo%';
+
+
+
+
+
+
