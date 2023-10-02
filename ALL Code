@@ -29,7 +29,7 @@ VALUES
 (7, 'Raising Canes', NULL, '544 S Upper St', NULL, 'Lexington', 'KY', 40508),
 (8, 'Phillip', 'Dennison', '6067 Falls of Rough Rd', NULL, 'Caneyville', 'KY', 42721),
 (9, 'Carolyn', 'Polston', '8074 Owensboro Rd', NULL, 'Leitchfield', 'KY', 42754),
-(10, 'Burger King', NULL, '1859 Cumberland Falls Highway', NULL, 'Corbin', 'KY', 40701),
+(10, 'Subway', NULL,'122 Highway 92 W', 'Williamsburg', 'KY', 40769),
 (11, 'Robert', 'Clark', '319 W Market St', NULL, 'Leitchfield', 'KY', 42754),
 (12, 'Stanley', 'Pigman', 'PO Box 10609', NULL, 'Wilmington', 'NC', 27262),
 (13, 'Earl', 'Congdon', 'PO Box 6635', NULL, 'High Point', 'NC', 27262),
@@ -66,7 +66,7 @@ VALUES
 (38, "Whole Foods Market", NULL, "4059 Finn Way", null, "Lexington", "KY", 40517),
 (39, "Han Woo Ri", NULL, "371 S Limestone", "FLOOR 1 ", "Lexington", "KY", 40508),
 (40, "Kung Fu Tea x TKK Fried Chicken", NULL, "685 S Limestone", "STE 150 ", "Lexington", "KY", 40508),
-(41, 'Buc-ee''s', NULL, "1013 Buc-ee's Blvd", NULL, "Richmond", "KY", 40475),
+(41, "Dollar Tree" , NULL, "100 Malabu Dr", "Lexington", "KY", 40503);
 
 INSERT INTO receipts 
 VALUES 
