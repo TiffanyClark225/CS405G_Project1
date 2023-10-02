@@ -6,7 +6,7 @@ CREATE TABLE addresses (
     address2 char(40),
     city char(40),
     stateABB char(2),
-    zipcode int(5),
+    zipcode int(5)
 );
 
 CREATE TABLE receipts (
