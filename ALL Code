@@ -66,7 +66,7 @@ VALUES
 (38, "Whole Foods Market", NULL, "4059 Finn Way", null, "Lexington", "KY", 40517),
 (39, "Han Woo Ri", NULL, "371 S Limestone", "FLOOR 1 ", "Lexington", "KY", 40508),
 (40, "Kung Fu Tea x TKK Fried Chicken", NULL, "685 S Limestone", "STE 150 ", "Lexington", "KY", 40508),
-(41, "Dollar Tree" , NULL, "100 Malabu Dr", "Lexington", "KY", 40503);
+(41, "Dollar Tree" , NULL, "100 Malabu Dr", NULL, "Lexington", "KY", 40503);
 
 INSERT INTO receipts 
 VALUES 
