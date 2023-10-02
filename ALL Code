@@ -9,14 +9,6 @@ CREATE TABLE addresses (
     zipcode int(5)
 );
 
-CREATE TABLE receipts (
-    CID int(2),
-    SID int(2),
-    date_of_purchase date,
-    totalSales DECIMAL(5,2),
-    num_of_items int(3),
-    picture blob(50)
-);
 
 INSERT INTO addresses
 VALUES
@@ -67,42 +59,6 @@ VALUES
 (39, "Han Woo Ri", NULL, "371 S Limestone", "FLOOR 1 ", "Lexington", "KY", 40508),
 (40, "Kung Fu Tea x TKK Fried Chicken", NULL, "685 S Limestone", "STE 150 ", "Lexington", "KY", 40508),
 (41, "Dollar Tree" , NULL, "100 Malabu Dr", NULL, "Lexington", "KY", 40503);
-
-INSERT INTO receipts 
-VALUES 
-(16, 26,'2023-09-24',37.6,3, NULL),
-(21, 41,'2023-09-23',17.71,1, NULL),
-(24, 27,'2023-09-22',15.64,3, NULL),
-(14, 28,'2023-09-22',36.99,4, NULL),
-(20, 29,'2023-09-16',26.7,1, NULL),
-(19, 30,'2023-09-16',17,3, NULL),
-(17, 31,'2023-09-12',72.4,18, NULL),
-(22, 32,'2023-09-12',14.01,3, NULL),
-(34, 33,'2023-09-02',118.86,14, NULL),
-(9, 34,'2023-08-12',74.21,14, NULL),
-(11, 35,'2023-08-12',21.18,2, NULL),
-(18, 10,'2023-08-04',29,5, NULL),
-(16, 36,'2023-07-30',6.09,2, NULL),
-(25, 37,'2023-04-01',4.44,1, NULL),
-(23, 38,'2022-12-27',5.29,1, NULL);
-
-
-
-
-
-USE tncl225;
-create tables;
-SHOW TABLES;
-insert functions;
-USE tablename (addresses, receipts);
-SHOW COLUMNS * FROM tablename;
-SELECT * FROM tablename;
-
-
-SELECT formalName AS "Customer/Business Full Name", CONCAT(address1, IFNULL(CONCAT(' ', address2), ''), ' ', city, ', ', stateABB, ' ', zipcode) AS "Delivery address" FROM addresses;
-
-SELECT COUNT(*) AS "Total number" FROM addresses WHERE formalName LIKE '%Bo%';
-SELECT COUNT(*) AS "Total number" FROM receipts WHERE formalName LIKE '%Bo%';
 
 ALTER TABLE addresses
 ADD primary_phone int(10),
@@ -190,6 +146,57 @@ UPDATE addresses
 SET primary_phone = 3438956565, secondary_phone = NULL WHERE ID = 40;
 UPDATE addresses
 SET primary_phone = 3448956763, secondary_phone = NULL WHERE ID = 41;
+
+CREATE TABLE receipts (
+    CID int(2),
+    SID int(2),
+    date_of_purchase date,
+    totalSales DECIMAL(5,2),
+    num_of_items int(3),
+    picture blob(50)
+);
+
+INSERT INTO receipts 
+VALUES 
+(16, 26,'2023-09-24',37.6,3, NULL),
+(21, 41,'2023-09-23',17.71,1, NULL),
+(24, 27,'2023-09-22',15.64,3, NULL),
+(14, 28,'2023-09-22',36.99,4, NULL),
+(20, 29,'2023-09-16',26.7,1, NULL),
+(19, 30,'2023-09-16',17,3, NULL),
+(17, 31,'2023-09-12',72.4,18, NULL),
+(22, 32,'2023-09-12',14.01,3, NULL),
+(34, 33,'2023-09-02',118.86,14, NULL),
+(9, 34,'2023-08-12',74.21,14, NULL),
+(11, 35,'2023-08-12',21.18,2, NULL),
+(18, 10,'2023-08-04',29,5, NULL),
+(16, 36,'2023-07-30',6.09,2, NULL),
+(25, 37,'2023-04-01',4.44,1, NULL),
+(23, 38,'2022-12-27',5.29,1, NULL);
+
+
+
+
+
+
+
+
+
+USE tncl225;
+create tables;
+SHOW TABLES;
+insert functions;
+USE tablename (addresses, receipts);
+SHOW COLUMNS * FROM tablename;
+SELECT * FROM tablename;
+
+
+SELECT formalName AS "Customer/Business Full Name", CONCAT(address1, IFNULL(CONCAT(' ', address2), ''), ' ', city, ', ', stateABB, ' ', zipcode) AS "Delivery address" FROM addresses;
+
+SELECT COUNT(*) AS "Total number" FROM addresses WHERE formalName LIKE '%Bo%';
+SELECT COUNT(*) AS "Total number" FROM receipts WHERE formalName LIKE '%Bo%';
+
+
 
 
 
