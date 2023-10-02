@@ -38,7 +38,7 @@ VALUES
 (21, "Bob C.", "Smith", "300 Rose Street", "Apartment 221 ", "New York", "NY", 10001),
 (22, "Bowman F.",  "Wildcat", "#1 Avenue of Champions", null, "Lexington", "KY", 40506),
 (23, "Bob C.", "Smith", "200 Park Avenue ", NULL, "Lexington", "KY", 40507),
-(24, "Bob", "Porter c/o Intech", "1 Dead End Row", "Room 200n ", "Dallas", "TX", 12347),
+(24, "Bob", "Porter c/o Intech", "1 Dead End Row", "Room 200 ", "Dallas", "TX", 12347),
 (25, "Mr. Bob", "Sydell c/o Intech", "1 Dead End Row", "Room 200 ", "Dallas", "TX", 12347);
 
 INSERT INTO addresses
