@@ -20,8 +20,8 @@ CREATE TABLE receipts (
 INSERT INTO addresses
 VALUES
 (1, 'Costco', NULL, '1500 Fitzgerald Ct', NULL, 'Lexington', 'KY', 40509),
-(2, 'Pizza Hut',NULL,  '4240 Saron Dr', 'STE 7B', 'Lexington', 'KY', 40517),
-(3, 'Jimmy Johns', NULL'427 Redding Rd', NULL, 'Lexington', 'KY', 40517),
+(2, 'Pizza Hut', NULL, '4240 Saron Dr', 'STE 7B', 'Lexington', 'KY', 40517),
+(3, 'Jimmy Johns', NULL, '427 Redding Rd', NULL, 'Lexington', 'KY', 40517),
 (4, 'Insomnia Cookies', NULL, '433 Jersey St', NULL, 'Lexington', 'KY', 40508),
 (5, 'European Delights Bakery', NULL, '221 E Brannon Rd', NULL, 'Nicholasville', 'KY', 40356),
 (6, 'DY Market', NULL, '3101 Clays Mill Rd', 'STE 102', 'Lexington', 'KY', 40503),
@@ -33,7 +33,7 @@ VALUES
 (12, 'Stanley', 'Pigman', 'PO Box 10609', NULL, 'Wilmington', 'NC', 27262),
 (13, 'Earl', 'Congdon', 'PO Box 6635', NULL, 'High Point', 'NC', 27262),
 (14, 'April', 'Newton', '542 Ballard St', NULL, 'Lexington', 'KY', 40508),
-(15, 'Sai Super Bazar Farmers Market', NULL '3146 Mapleleaf Dr', NULL, 'Lexington', 'KY', 40509);
+(15, 'Sai Super Bazar Farmers Market', NULL, '3146 Mapleleaf Dr', NULL, 'Lexington', 'KY', 40509);
 
 INSERT INTO addresses
 VALUES 
@@ -50,21 +50,21 @@ VALUES
 
 INSERT INTO addresses
 VALUES
-(26, "Southland Lanes", "205 Southland Dr", null,"Lexington", "KY", 40503),
-(27, "Starbucks", "404 S Limestone", null, "Lexington", "KY", 40508),
-(28, "Planet Thai", "2417 Nicholasville Rd", null, "Lexington", "KY", 40503),
-(29, "O'Reilly Auto Parts", "125 W Hightway 92", null, "Williamsburg", "KY", 40769),
-(30, "Goodwill", "729 W Hightway 92", null, "Williamsburg", "KY", 40769),
-(31, "Kroger", "704 Euclid Ave", null, "Lexington", "KY", 40508),
-(32, "Trader Joe's", "2326 Nicholasville Rd", null, "Lexington", "KY", 40503),
-(33, "Sam's Club", "1063 E New Circle Rd", null, "Lexington", "KY", 40505),
-(34, "Walmart", "500 W New Circle Rd", null, "Lexington", "KY", 40511),
-(35, "Target", "500 S Upper", "STE 110 ", "Lexington", "KY", 40508),
-(36, "Meijer", "351 Meijer Way", "STE 100 ", "Lexington", "KY", 40503),
-(37, "Good Foods Market & Cafe", "445 Southload Dr", null, "Lexington", "KY", 40503),
-(38, "Whole Foods Market", "4059 Finn Way", null, "Lexington", "KY", 40517),
-(39, "Han Woo Ri", "371 S Limestone", "FLOOR 1 ", "Lexington", "KY", 40508),
-(40, "Kung Fu Tea x TKK Fried Chicken", "685 S Limestone", "STE 150 ", "Lexington", "KY", 40508);
+(26, "Southland Lanes", NULL, "205 Southland Dr", null,"Lexington", "KY", 40503),
+(27, "Starbucks", NULL, "404 S Limestone", null, "Lexington", "KY", 40508),
+(28, "Planet Thai", NULL, "2417 Nicholasville Rd", null, "Lexington", "KY", 40503),
+(29, "O'Reilly Auto Parts", NULL, "125 W Hightway 92", null, "Williamsburg", "KY", 40769),
+(30, "Goodwill", NULL, "729 W Hightway 92", null, "Williamsburg", "KY", 40769),
+(31, "Kroger", NULL, "704 Euclid Ave", null, "Lexington", "KY", 40508),
+(32, "Trader Joe's", NULL, "2326 Nicholasville Rd", null, "Lexington", "KY", 40503),
+(33, "Sam's Club", NULL, "1063 E New Circle Rd", null, "Lexington", "KY", 40505),
+(34, "Walmart", NULL, "500 W New Circle Rd", null, "Lexington", "KY", 40511),
+(35, "Target", NULL, "500 S Upper", "STE 110 ", "Lexington", "KY", 40508),
+(36, "Meijer", NULL, "351 Meijer Way", "STE 100 ", "Lexington", "KY", 40503),
+(37, "Good Foods Market & Cafe", NULL, "445 Southload Dr", null, "Lexington", "KY", 40503),
+(38, "Whole Foods Market", NULL, "4059 Finn Way", null, "Lexington", "KY", 40517),
+(39, "Han Woo Ri", NULL, "371 S Limestone", "FLOOR 1 ", "Lexington", "KY", 40508),
+(40, "Kung Fu Tea x TKK Fried Chicken", NULL, "685 S Limestone", "STE 150 ", "Lexington", "KY", 40508);
 
 INSERT INTO receipts 
 VALUES 
@@ -103,8 +103,7 @@ SELECT COUNT(*) AS "Total number" FROM addresses WHERE formalName LIKE '%Bo%';
 SELECT COUNT(*) AS "Total number" FROM receipts WHERE formalName LIKE '%Bo%';
 
 ALTER TABLE addresses
-ADD primary_phone int(10);
-ALTER TABLE addresses
+ADD primary_phone int(10),
 ADD secondary_phone int(10);
 
 UPDATE addresses
