@@ -29,7 +29,7 @@ VALUES
 (7, 'Raising Canes', NULL, '544 S Upper St', NULL, 'Lexington', 'KY', 40508),
 (8, 'Phillip', 'Dennison', '6067 Falls of Rough Rd', NULL, 'Caneyville', 'KY', 42721),
 (9, 'Carolyn', 'Polston', '8074 Owensboro Rd', NULL, 'Leitchfield', 'KY', 42754),
-(10, 'Subway', NULL,'122 Highway 92 W', 'Williamsburg', 'KY', 40769),
+(10, 'Subway', NULL,'122 Highway 92 W', NULL, 'Williamsburg', 'KY', 40769),
 (11, 'Robert', 'Clark', '319 W Market St', NULL, 'Leitchfield', 'KY', 42754),
 (12, 'Stanley', 'Pigman', 'PO Box 10609', NULL, 'Wilmington', 'NC', 27262),
 (13, 'Earl', 'Congdon', 'PO Box 6635', NULL, 'High Point', 'NC', 27262),
