@@ -1,4 +1,5 @@
 CREATE TABLE addresses (
+    ID int(2),
     formalName char(40),
     address1 char(40),
     address2 char(40),
@@ -22,52 +23,52 @@ CREATE TABLE receipts (
 
 INSERT INTO addresses
 VALUES
-('Costco', '1500 Fitzgerald Ct', NULL, 'Lexington', 'KY', 40509),
-('Pizza Hut', '4240 Saron Dr', 'STE 7B', 'Lexington', 'KY', 40517),
-('Jimmy Johns', '427 Redding Rd', NULL, 'Lexington', 'KY', 40517),
-('Insomnia Cookies', '433 Jersey St', NULL, 'Lexington', 'KY', 40508),
-('European Delights Bakery', '221 E Brannon Rd', NULL, 'Nicholasville', 'KY', 40356),
-('DY Market', '3101 Clays Mill Rd', 'STE 102', 'Lexington', 'KY', 40503),
-('Raising Canes', '544 S Upper St', NULL, 'Lexington', 'KY', 40508),
-('Phillip Dennison', '6067 Falls of Rough Rd', NULL, 'Caneyville', 'KY', 42721),
-('Carolyn Polston', '8074 Owensboro Rd', NULL, 'Leitchfield', 'KY', 42754),
-('Burger King', '1859 Cumberland Falls Highway', NULL, 'Corbin', 'KY', 40701),
-('Robert Clark', '319 W Market St', NULL, 'Leitchfield', 'KY', 42754),
-('Stanley Pigman', 'PO Box 10609', NULL, 'Wilmington', 'NC', 27262),
-('Earl Congdon', 'PO Box 6635', NULL, 'High Point', 'NC', 27262),
-('April Newton', '542 Ballard St', NULL, 'Lexington', 'KY', 40508),
-('Sai Super Bazar Farmers Market', '3146 Mapleleaf Dr', NULL, 'Lexington', 'KY', 40509);
+(1, 'Costco', '1500 Fitzgerald Ct', NULL, 'Lexington', 'KY', 40509),
+(2, 'Pizza Hut', '4240 Saron Dr', 'STE 7B', 'Lexington', 'KY', 40517),
+(3, 'Jimmy Johns', '427 Redding Rd', NULL, 'Lexington', 'KY', 40517),
+(4, 'Insomnia Cookies', '433 Jersey St', NULL, 'Lexington', 'KY', 40508),
+(5, 'European Delights Bakery', '221 E Brannon Rd', NULL, 'Nicholasville', 'KY', 40356),
+(6, 'DY Market', '3101 Clays Mill Rd', 'STE 102', 'Lexington', 'KY', 40503),
+(7, 'Raising Canes', '544 S Upper St', NULL, 'Lexington', 'KY', 40508),
+(8, 'Phillip Dennison', '6067 Falls of Rough Rd', NULL, 'Caneyville', 'KY', 42721),
+(9, 'Carolyn Polston', '8074 Owensboro Rd', NULL, 'Leitchfield', 'KY', 42754),
+(10, 'Burger King', '1859 Cumberland Falls Highway', NULL, 'Corbin', 'KY', 40701),
+(11, 'Robert Clark', '319 W Market St', NULL, 'Leitchfield', 'KY', 42754),
+(12, 'Stanley Pigman', 'PO Box 10609', NULL, 'Wilmington', 'NC', 27262),
+(13, 'Earl Congdon', 'PO Box 6635', NULL, 'High Point', 'NC', 27262),
+(14, 'April Newton', '542 Ballard St', NULL, 'Lexington', 'KY', 40508),
+(15, 'Sai Super Bazar Farmers Market', '3146 Mapleleaf Dr', NULL, 'Lexington', 'KY', 40509);
 
 INSERT INTO addresses
 VALUES 
-("Mr. Ray L. Hyatt Jr.", "300 Rose St", "Room 102 Hardymon Building ", "Lexington", "KY", 40506),
-("Mr. Ray L. Hyatt Jr.", "301 Hilltop Avenue", "Room 102 ", "Lexington", "KY", 40506),
-("John Wick", "82 Beaver St", "Room 1301 ", "New York", "NY", 10005),
-("Tony Stark", "200 Park Avenue", "Penthouse ", "New York", "NY", 10001),
-("Dr. Stephen Strange", "117A Bleecker Street", null, "New York", "NY", 10001),
-("Bob C. Smith", "300 Rose Street", "Apartment 221 ", "New York", "NY", 10001),
-("Bowman F. Wildcat", "#1 Avenue of Champions", null, "Lexington", "KY", 40506),
-("Bob C. Smith", "200 Park Avenue ", NULL, "Lexington", "KY", 40507),
-("Bob Porter c/o Intech", "1 Dead End Row", "Room 200n ", "Dallas", "TX", 12347),
-("Mr. Bob Sydell c/o Intech", "1 Dead End Row", "Room 200 ", "Dallas", "TX", 12347);
+(16, "Mr. Ray L. Hyatt Jr.", "300 Rose St", "Room 102 Hardymon Building ", "Lexington", "KY", 40506),
+(17, "Mr. Ray L. Hyatt Jr.", "301 Hilltop Avenue", "Room 102 ", "Lexington", "KY", 40506),
+(18, "John Wick", "82 Beaver St", "Room 1301 ", "New York", "NY", 10005),
+(19, "Tony Stark", "200 Park Avenue", "Penthouse ", "New York", "NY", 10001),
+(20, "Dr. Stephen Strange", "117A Bleecker Street", null, "New York", "NY", 10001),
+(21, "Bob C. Smith", "300 Rose Street", "Apartment 221 ", "New York", "NY", 10001),
+(22, "Bowman F. Wildcat", "#1 Avenue of Champions", null, "Lexington", "KY", 40506),
+(23, "Bob C. Smith", "200 Park Avenue ", NULL, "Lexington", "KY", 40507),
+(24, "Bob Porter c/o Intech", "1 Dead End Row", "Room 200n ", "Dallas", "TX", 12347),
+(25, "Mr. Bob Sydell c/o Intech", "1 Dead End Row", "Room 200 ", "Dallas", "TX", 12347);
 
 INSERT INTO addresses
 VALUES
-("Southland Lanes", "205 Southland Dr", null,"Lexington", "KY", 40503),
-("Starbucks", "404 S Limestone", null, "Lexington", "KY", 40508),
-("Planet Thai", "2417 Nicholasville Rd", null, "Lexington", "KY", 40503),
-("O'Reilly Auto Parts", "125 W Hightway 92", null, "Williamsburg", "KY", 40769),
-("Goodwill", "729 W Hightway 92", null, "Williamsburg", "KY", 40769),
-("Kroger", "704 Euclid Ave", null, "Lexington", "KY", 40508),
-("Trader Joe's", "2326 Nicholasville Rd", null, "Lexington", "KY", 40503),
-("Sam's Club", "1063 E New Circle Rd", null, "Lexington", "KY", 40505),
-("Walmart", "500 W New Circle Rd", null, "Lexington", "KY", 40511),
-("Target", "500 S Upper", "STE 110 ", "Lexington", "KY", 40508),
-("Meijer", "351 Meijer Way", "STE 100 ", "Lexington", "KY", 40503),
-("Good Foods Market & Cafe", "445 Southload Dr", null, "Lexington", "KY", 40503),
-("Whole Foods Market", "4059 Finn Way", null, "Lexington", "KY", 40517),
-("Han Woo Ri", "371 S Limestone", "FLOOR 1 ", "Lexington", "KY", 40508),
-("Kung Fu Tea x TKK Fried Chicken", "685 S Limestone", "STE 150 ", "Lexington", "KY", 40508);
+(26, "Southland Lanes", "205 Southland Dr", null,"Lexington", "KY", 40503),
+(27, "Starbucks", "404 S Limestone", null, "Lexington", "KY", 40508),
+(28, "Planet Thai", "2417 Nicholasville Rd", null, "Lexington", "KY", 40503),
+(29, "O'Reilly Auto Parts", "125 W Hightway 92", null, "Williamsburg", "KY", 40769),
+(30, "Goodwill", "729 W Hightway 92", null, "Williamsburg", "KY", 40769),
+(31, "Kroger", "704 Euclid Ave", null, "Lexington", "KY", 40508),
+(32, "Trader Joe's", "2326 Nicholasville Rd", null, "Lexington", "KY", 40503),
+(33, "Sam's Club", "1063 E New Circle Rd", null, "Lexington", "KY", 40505),
+(34, "Walmart", "500 W New Circle Rd", null, "Lexington", "KY", 40511),
+(35, "Target", "500 S Upper", "STE 110 ", "Lexington", "KY", 40508),
+(36, "Meijer", "351 Meijer Way", "STE 100 ", "Lexington", "KY", 40503),
+(37, "Good Foods Market & Cafe", "445 Southload Dr", null, "Lexington", "KY", 40503),
+(38, "Whole Foods Market", "4059 Finn Way", null, "Lexington", "KY", 40517),
+(39, "Han Woo Ri", "371 S Limestone", "FLOOR 1 ", "Lexington", "KY", 40508),
+(40, "Kung Fu Tea x TKK Fried Chicken", "685 S Limestone", "STE 150 ", "Lexington", "KY", 40508);
 
 INSERT INTO receipts 
 VALUES 
