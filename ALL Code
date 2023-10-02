@@ -5,8 +5,6 @@ CREATE TABLE addresses (
     city char(40),
     stateABB char(2),
     zipcode int(5),
-    phone1 int(10),
-    phone2 int(10)
 );
 
 CREATE TABLE receipts (
@@ -106,6 +104,61 @@ SELECT formalName AS "Customer/Business Full Name", CONCAT(address1, IFNULL(CONC
 
 SELECT COUNT(*) AS "Total number" FROM addresses WHERE formalName LIKE '%Bo%';
 SELECT COUNT(*) AS "Total number" FROM receipts WHERE formalName LIKE '%Bo%';
+
+ALTER TABLE addresses
+ADD primary_phone int(10);
+ALTER TABLE addresses
+ADD secondary_phone int(10);
+INSERT INTO addresses (primary_phone, secondary_phone)
+VALUES
+(8592453620, 1223344556),
+(8592724757, NULL),
+(8595234185, NULL),
+(8596540653, NULL),
+(8592717000, NULL),
+(8592240088, NULL),
+(8594553353, NULL),
+(2702873864, NULL),
+(2705891077, NULL),
+(8592601151, NULL),
+(2702874465, 1234448889),
+(8592992002, NULL),
+(8592680300, NULL),
+(2228845980, NULL),
+(5554448888, NULL),
+(NULL, NULL),
+(NULL, NULL),
+(5555555555, NULL),
+(5555553142, NULL),
+(5555554321, NULL),
+(NULL, NULL),
+(NULL, NULL),
+(NULL, NULL),
+(NULL, NULL),
+(NULL, NULL),
+(2702879934, NULL),
+(1234567890, NULL),
+(5554448989, NULL),
+(2709999999, NULL),
+(9999999999, NULL),
+(3333333333, NULL),
+(2222222222, NULL),
+(4444444444, NULL),
+(6665558845, NULL),
+(4568894566, NULL),
+(8886676767, NULL),
+(8894447676, 1111111111),
+(3434898787, NULL),
+(454222222, NULL),
+(3438956565, NULL);
+
+
+
+
+
+
+
+
 
 
 
