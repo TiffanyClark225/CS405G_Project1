@@ -65,7 +65,8 @@ VALUES
 (37, "Good Foods Market & Cafe", NULL, "445 Southload Dr", null, "Lexington", "KY", 40503),
 (38, "Whole Foods Market", NULL, "4059 Finn Way", null, "Lexington", "KY", 40517),
 (39, "Han Woo Ri", NULL, "371 S Limestone", "FLOOR 1 ", "Lexington", "KY", 40508),
-(40, "Kung Fu Tea x TKK Fried Chicken", NULL, "685 S Limestone", "STE 150 ", "Lexington", "KY", 40508);
+(40, "Kung Fu Tea x TKK Fried Chicken", NULL, "685 S Limestone", "STE 150 ", "Lexington", "KY", 40508),
+(41, 'Buc-ee''s', NULL, "1013 Buc-ee's Blvd", NULL, "Richmond", "KY", 40475),
 
 INSERT INTO receipts 
 VALUES 
