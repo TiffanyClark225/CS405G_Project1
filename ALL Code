@@ -175,27 +175,12 @@ VALUES
 (23, 38,'2022-12-27',5.29,1, NULL);
 
 
-
-
-
-
-
-
-
-USE tncl225;
-create tables;
-SHOW TABLES;
-insert functions;
-USE tablename (addresses, receipts);
-SHOW COLUMNS * FROM tablename;
-SELECT * FROM tablename;
-
-
+--deliverable 6
 SELECT formalName AS "Customer/Business Full Name", CONCAT(address1, IFNULL(CONCAT(' ', address2), ''), ' ', city, ', ', stateABB, ' ', zipcode) AS "Delivery address" FROM addresses;
 
 
 
-
+--deliverable 7
 SELECT CONCAT(a.firstName," ", a.lastName) AS "Customer Name", a.primary_phone as "Phone number", a.zipcode as "Zip code"
 FROM addresses AS a
 JOIN (
@@ -208,6 +193,14 @@ JOIN (
 ) AS top_zipcodes
 ON a.zipcode = top_zipcodes.zipcode;
 
+
+-- deliverable 9
+SELECT COUNT(DISTINCT r.CID) AS "Total Number"
+FROM receipts as r
+JOIN addresses as a ON r.CID = a.ID
+WHERE a.firstName LIKE 'Bo%';
+
+
 -- deliverable 10
 select 
 a.zipcode as "Consumer Zip Code",
@@ -217,17 +210,16 @@ inner join address as a on r.CID = a.ID
 group by a.zipcode
 Order by totalSales desc;
 
--- deliverable 9
-SELECT COUNT(DISTINCT r.CID) AS "Total Number"
-FROM receipts as r
-JOIN addresses as a ON r.CID = a.ID
-WHERE a.firstName LIKE 'Bo%';
 
 
-
-
-
-
+--helpful code
+USE tncl225;
+create tables;
+SHOW TABLES;
+insert functions;
+USE tablename (addresses, receipts);
+SHOW COLUMNS * FROM tablename;
+SELECT * FROM tablename;
 
 
 
