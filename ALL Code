@@ -202,7 +202,14 @@ SELECT a.zipcode, COUNT(r.CID) AS TotalCustomers FROM receipts r INNER JOIN addr
 (SELECT CustomerCount FROM (SELECT a2.zipcode, COUNT(r2.CID) AS CustomerCount FROM receipts r2 INNER JOIN addresses a2 ON r2.CID = a2.ID GROUP BY a2.zipcode
 ORDER BY CustomerCount DESC LIMIT 2) AS subquery ORDER BY CustomerCount ASC LIMIT 1)ORDER BY TotalCustomers DESC;
 
-
+-- deliverable 10
+select 
+a.zipcode as "Consumer Zip Code",
+r.totalSales as "Total Sales"
+from receipts as r
+inner join address as a on r.CID = a.ID
+group by a.zipcode
+Order by totalSales desc;
 
 
 
