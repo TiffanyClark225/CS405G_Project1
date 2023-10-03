@@ -193,8 +193,6 @@ SELECT * FROM tablename;
 
 SELECT formalName AS "Customer/Business Full Name", CONCAT(address1, IFNULL(CONCAT(' ', address2), ''), ' ', city, ', ', stateABB, ' ', zipcode) AS "Delivery address" FROM addresses;
 
-SELECT COUNT(*) AS "Total number" FROM addresses WHERE formalName LIKE '%Bo%';
-SELECT COUNT(*) AS "Total number" FROM receipts WHERE formalName LIKE '%Bo%';
 
 SELECT a.zipcode, count(r.CID) TotalCustomers from receipts r inner join addresses a on r.CID=a.ID group by a.zipcode order by count(a.ID) desc;
 
@@ -211,8 +209,11 @@ inner join address as a on r.CID = a.ID
 group by a.zipcode
 Order by totalSales desc;
 
-
-
+-- deliverable 9
+SELECT COUNT(DISTINCT r.CID) AS "Total Number"
+FROM receipts as r
+JOIN addresses as a ON r.CID = a.ID
+WHERE a.firstName LIKE 'Bo%';
 
 
 
