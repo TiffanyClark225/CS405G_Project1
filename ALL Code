@@ -249,7 +249,7 @@ UPDATE receipts
 SET h_item = "Organic chicken patties", h_price = 5.29, l_item = "Organic chicken patties", l_price = 5.29 WHERE SID = 38;
 
 SELECT 
-    CONCAT(a1.firstName, ' ', a1.lastName) AS "Customer Name",
+    IFNULL(CONCAT_WS(' ', NULLIF(a1.firstName, ''), NULLIF(a1.lastName, '')), a2.firstName) AS "Customer Name",
     a2.firstName AS "Business Name",
     r.h_price AS "Highest Price",
     r.totalSales AS "Total Sale",
