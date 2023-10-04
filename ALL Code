@@ -248,6 +248,21 @@ SET h_item = "Strawberries", h_price = 4.44, l_item = "Strawberries", l_price = 
 UPDATE receipts
 SET h_item = "Organic chicken patties", h_price = 5.29, l_item = "Organic chicken patties", l_price = 5.29 WHERE SID = 38;
 
+SELECT 
+    CONCAT(a1.firstName, ' ', a1.lastName) AS "Customer Name",
+    a2.firstName AS "Business Name",
+    r.h_price AS "Highest Price",
+    r.totalSales AS "Total Sale",
+    a1.stateABB AS "State",
+    a1.zipcode AS "Zip"
+FROM 
+    RC AS r
+LEFT JOIN 
+    addresses AS a1 ON a1.ID = r.CID
+LEFT JOIN
+    addresses AS a2 ON a2.ID = r.SID
+ORDER BY 
+    r.h_price DESC;
 
 --helpful code
 USE tncl225;
