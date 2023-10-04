@@ -177,7 +177,7 @@ VALUES
 
 --deliverable 6
 SELECT CONCAT(firstName, IFNULL(CONCAT(' ',lastName), '')) AS "Customer/Business Full Name", CONCAT(address1, IFNULL(CONCAT(' ', address2), ''), ' ', city, ', ', stateABB, ' ', zipcode) AS "Deli
-very address" FROM addresses;
+very address" FROM addresses ORDER BY addresses.zipcode ASC;
 
 
 --deliverable 7
