@@ -61,49 +61,49 @@ VALUES
 (41, "Dollar Tree" , NULL, "100 Malabu Dr", NULL, "Lexington", "KY", 40503);
 
 ALTER TABLE addresses
-ADD primary_phone int(10),
-ADD secondary_phone int(10);
+ADD primary_phone varchar(10),
+ADD secondary_phone varchar(10);
 
 UPDATE addresses
-SET primary_phone = 8592453620, secondary_phone = 1223344556 WHERE ID = 1;
+SET primary_phone = '8592453620', secondary_phone = '1223344556' WHERE ID = 1;
 UPDATE addresses
-SET primary_phone = 8592724757, secondary_phone = NULL WHERE ID = 2;
+SET primary_phone = '8592724757', secondary_phone = NULL WHERE ID = 2;
 UPDATE addresses
-SET primary_phone = 8595234185, secondary_phone = NULL WHERE ID = 3;
+SET primary_phone = '8595234185', secondary_phone = NULL WHERE ID = 3;
 UPDATE addresses
-SET primary_phone = 8596540653, secondary_phone = NULL WHERE ID = 4;
+SET primary_phone = '8596540653', secondary_phone = NULL WHERE ID = 4;
 UPDATE addresses
-SET primary_phone = 8592717000, secondary_phone = NULL WHERE ID = 5;
+SET primary_phone = '8592717000', secondary_phone = NULL WHERE ID = 5;
 UPDATE addresses
-SET primary_phone = 8592240088, secondary_phone = NULL WHERE ID = 6;
+SET primary_phone = '8592240088', secondary_phone = NULL WHERE ID = 6;
 UPDATE addresses
-SET primary_phone = 8562240999, secondary_phone = NULL WHERE ID = 7;
+SET primary_phone = '8562240999', secondary_phone = NULL WHERE ID = 7;
 UPDATE addresses
-SET primary_phone = 2702873864, secondary_phone = NULL WHERE ID = 8;
+SET primary_phone = '2702873864', secondary_phone = NULL WHERE ID = 8;
 UPDATE addresses
-SET primary_phone = 2705891077, secondary_phone = NULL WHERE ID = 9;
+SET primary_phone = '2705891077', secondary_phone = NULL WHERE ID = 9;
 UPDATE addresses
-SET primary_phone = 8592601151, secondary_phone = NULL WHERE ID = 10;
+SET primary_phone = '8592601151', secondary_phone = NULL WHERE ID = 10;
 UPDATE addresses
-SET primary_phone = 2702874465, secondary_phone = 1234448889 WHERE ID = 11;
+SET primary_phone = '2702874465', secondary_phone = '1234448889' WHERE ID = 11;
 UPDATE addresses
-SET primary_phone = 8592992002, secondary_phone = NULL WHERE ID = 12;
+SET primary_phone = '8592992002', secondary_phone = NULL WHERE ID = 12;
 UPDATE addresses
-SET primary_phone = 8592680300, secondary_phone = NULL WHERE ID = 13;
+SET primary_phone = '8592680300', secondary_phone = NULL WHERE ID = 13;
 UPDATE addresses
-SET primary_phone = 2228845980, secondary_phone = NULL WHERE ID = 14;
+SET primary_phone = '2228845980', secondary_phone = NULL WHERE ID = 14;
 UPDATE addresses
-SET primary_phone = 5554448888, secondary_phone = NULL WHERE ID = 15;
+SET primary_phone = '5554448888', secondary_phone = NULL WHERE ID = 15;
 UPDATE addresses
 SET primary_phone = NULL, secondary_phone = NULL WHERE ID = 16;
 UPDATE addresses
 SET primary_phone = NULL, secondary_phone = NULL WHERE ID = 17;
 UPDATE addresses
-SET primary_phone = 5555555555, secondary_phone = NULL WHERE ID = 18;
+SET primary_phone = '5555555555', secondary_phone = NULL WHERE ID = 18;
 UPDATE addresses
-SET primary_phone = 5555553142, secondary_phone = NULL WHERE ID = 19;
+SET primary_phone = '5555553142', secondary_phone = NULL WHERE ID = 19;
 UPDATE addresses
-SET primary_phone = 5555554321, secondary_phone = NULL WHERE ID = 20;
+SET primary_phone = '5555554321', secondary_phone = NULL WHERE ID = 20;
 UPDATE addresses
 SET primary_phone = NULL, secondary_phone = NULL WHERE ID = 21;
 UPDATE addresses
@@ -115,37 +115,37 @@ SET primary_phone = NULL, secondary_phone = NULL WHERE ID = 24;
 UPDATE addresses
 SET primary_phone = NULL, secondary_phone = NULL WHERE ID = 25;
 UPDATE addresses
-SET primary_phone = 2702879934, secondary_phone = NULL WHERE ID = 26;
+SET primary_phone = '2702879934', secondary_phone = NULL WHERE ID = 26;
 UPDATE addresses
-SET primary_phone = 1234567890, secondary_phone = NULL WHERE ID = 27;
+SET primary_phone = '1234567890', secondary_phone = NULL WHERE ID = 27;
 UPDATE addresses
-SET primary_phone = 5554448989, secondary_phone = NULL WHERE ID = 28;
+SET primary_phone = '5554448989', secondary_phone = NULL WHERE ID = 28;
 UPDATE addresses
-SET primary_phone = 2709999999, secondary_phone = NULL WHERE ID = 29;
+SET primary_phone = '2709999999', secondary_phone = NULL WHERE ID = 29;
 UPDATE addresses
-SET primary_phone = 9999999999, secondary_phone = NULL WHERE ID = 30;
+SET primary_phone = '9999999999', secondary_phone = NULL WHERE ID = 30;
 UPDATE addresses
-SET primary_phone = 3333333333, secondary_phone = NULL WHERE ID = 31;
+SET primary_phone = '3333333333', secondary_phone = NULL WHERE ID = 31;
 UPDATE addresses
-SET primary_phone = 2222222222, secondary_phone = NULL WHERE ID = 32;
+SET primary_phone = '2222222222', secondary_phone = NULL WHERE ID = 32;
 UPDATE addresses
-SET primary_phone = 4444444444, secondary_phone = NULL WHERE ID = 33;
+SET primary_phone = '4444444444', secondary_phone = NULL WHERE ID = 33;
 UPDATE addresses
-SET primary_phone = 6665558845, secondary_phone = NULL WHERE ID = 34;
+SET primary_phone = '6665558845', secondary_phone = NULL WHERE ID = 34;
 UPDATE addresses
-SET primary_phone = 4568894566, secondary_phone = NULL WHERE ID = 35;
+SET primary_phone = '4568894566', secondary_phone = NULL WHERE ID = 35;
 UPDATE addresses
-SET primary_phone = 8886676767, secondary_phone = NULL WHERE ID = 36;
+SET primary_phone = '8886676767', secondary_phone = NULL WHERE ID = 36;
 UPDATE addresses
-SET primary_phone = 8894447676, secondary_phone = 1111111111 WHERE ID = 37;
+SET primary_phone = '8894447676', secondary_phone = '1111111111' WHERE ID = 37;
 UPDATE addresses
-SET primary_phone = 3434898787, secondary_phone = NULL WHERE ID = 38;
+SET primary_phone = '3434898787', secondary_phone = NULL WHERE ID = 38;
 UPDATE addresses
-SET primary_phone = 454222222, secondary_phone = NULL WHERE ID = 39;
+SET primary_phone = '454222222', secondary_phone = NULL WHERE ID = 39;
 UPDATE addresses
-SET primary_phone = 3438956565, secondary_phone = NULL WHERE ID = 40;
+SET primary_phone = '3438956565', secondary_phone = NULL WHERE ID = 40;
 UPDATE addresses
-SET primary_phone = 3448956763, secondary_phone = NULL WHERE ID = 41;
+SET primary_phone = '3448956763', secondary_phone = NULL WHERE ID = 41;
 
 CREATE TABLE receipts (
     CID int(2),
