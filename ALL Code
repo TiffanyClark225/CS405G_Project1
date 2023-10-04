@@ -210,6 +210,43 @@ inner join address as a on r.CID = a.ID
 group by a.zipcode
 Order by totalSales desc;
 
+--deliverable 8
+ALTER TABLE receipts
+ADD h_item char(40),
+ADD h_price decimal(5,2),
+ADD l_item char(40),
+ADD l_price decimal(5,2);
+
+UPDATE receipts
+SET h_item = "League Bowler Ticket", h_price = 25.00, l_item = "Senior Ticket", l_price = 5.50 WHERE SID = 26;
+UPDATE receipts
+SET h_item = "Halloween decor", h_price = 17.71, l_item = "Halloween decor", l_price = 17.71 WHERE SID = 41;
+UPDATE receipts
+SET h_item = "Venti-sized mocha frappuccino", h_price = 7.50, l_item = "Small brewed coffee", l_price = 2.56 WHERE SID = 27;
+UPDATE receipts
+SET h_item = "Thai prawns", h_price = 18.00, l_item = "Spring roll", l_price = 3.00 WHERE SID = 28;
+UPDATE receipts
+SET h_item = "Car battery charge", h_price = 26.70, l_item = "Car battery charger", l_price = 26.70 WHERE SID = 29;
+UPDATE receipts
+SET h_item = "Vintage standing clock", h_price = 12.50, l_item = "Flower bouquet", l_price = 2.50 WHERE SID = 30;
+UPDATE receipts
+SET h_item = "Prime Steak", h_price = 15.00, l_item = "Dozen eggs", l_price = 1.50 WHERE SID = 31;
+UPDATE receipts
+SET h_item = "Gourmet cheese", h_price = 7.56, l_item = "Frozen vegetables", l_price = 2.40 WHERE SID = 32;
+UPDATE receipts
+SET h_item = "Ferrero Roche", h_price = 10.50, l_item = "Paper towel", l_price = 2.10 WHERE SID = 33;
+UPDATE receipts
+SET h_item = "Samsung TV", h_price = 59.99, l_item = "Pilot pen", l_price = 1.99 WHERE SID = 34;
+UPDATE receipts
+SET h_item = "Phone charge", h_price = 16.50, l_item = "Birthday card", l_price = 4.68 WHERE SID = 35;
+UPDATE receipts
+SET h_item = "Footlong steak", h_price = 9, l_item = "Coca cola drink", l_price = 1 WHERE SID = 10;
+UPDATE receipts
+SET h_item = "Tide detergent", h_price = 4.20, l_item = "Kitkat", l_price = 1.89 WHERE SID = 36;
+UPDATE receipts
+SET h_item = "Strawberries", h_price = 4.44, l_item = "Strawberries", l_price = 4.44 WHERE SID = 37;
+UPDATE receipts
+SET h_item = "Organic chicken patties", h_price = 5.29, l_item = "Organic chicken patties", l_price = 5.29 WHERE SID = 38;
 
 
 --helpful code
