@@ -256,7 +256,7 @@ SELECT
     a1.stateABB AS "State",
     a1.zipcode AS "Zip"
 FROM 
-    RC AS r
+    receipts AS r
 LEFT JOIN 
     addresses AS a1 ON a1.ID = r.CID
 LEFT JOIN
